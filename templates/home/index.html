@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>Patuscada Fest | + que 1 festa. Uma experiência!</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/"
+    />
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/navbar-top-fixed.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav class="navbar-top-fixed navbar navbar-expand-md fixed-top bg-principal shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'imgs/logo_sombra.png' %}" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-principal">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">.home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">.sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#como">.como chegar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#onde">.onde ficar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#parceiros">.parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">.contato</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2" id="btn-comprar">
+          <a class="btn btn-default" href="#"><img src="{% static 'imgs/bt_comprar.png' %}" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container body-main" >
+      <div class="row ">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'imgs/banner1.jpg' %}" class="d-block w-100" alt="{% static 'imgs/caixa_dir.png' %}" />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'imgs/banner2.jpg' %}" class="d-block w-100" alt="{% static 'imgs/caixa_dir.png' %}" />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'imgs/banner3.jpg' %}" class="d-block w-100" alt="{% static 'imgs/caixa_dir.png' %}" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-5 space" id="sobre">
+        <div class="col-md-3 col-sm-4 text-center">
+          <img src="{% static 'imgs/logo_redonda.png' %}" alt="" />
+        </div>
+        <div class="col-md-9 col-sm-8 mt-3">
+          <div class="row">
+            <h3 class="txt-roxo">
+              SOBRE <span class="txt-amarelo"> A PATUSCADA </span>
+            </h3>
+          </div>
+          <div class="row">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5" id="como">
+        <h3 class="txt-roxo">
+          COMO <span class="txt-amarelo"> CHEGAR? </span>
+        </h3>
+        <div class="row">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5" id="onde">
+        <h3 class="txt-roxo">
+          ONDE <span class="txt-amarelo"> FICAR? </span>
+        </h3>
+        <div class="row">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="bg-principal">
+                <tr>
+                  <td>Descrição</td>
+                  <td>Contato</td>
+                  <td>Falar com</td>
+                </tr>
+              </thead>
+              
+              <tbody>
+                {% for o in onde%}
+                  <tr>
+                    <th>{{o.descricao}}</th>
+                    <td>{{o.contato}}</td>
+                    <td>{{o.falarCom}}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="parceiros">
+      <h3 class="txt-roxo">
+        APOIAM <span class="txt-amarelo"> A PATUSCADA </span>
+      </h3>
+      <div class="row">  
+        <div class="row photos">
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" data-lightbox="photos"><img class="img-fluid" src=" {% static 'imgs/caixa_dir.png' %}"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" data-lightbox="photos"><img class="img-fluid" src=" {% static 'imgs/caixa_dir.png' %}"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" data-lightbox="photos"><img class="img-fluid" src=" {% static 'imgs/caixa_dir.png' %}"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" data-lightbox="photos"><img class="img-fluid" src=" {% static 'imgs/caixa_dir.png' %}"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="#" data-lightbox="photos"><img class="img-fluid" src=" {% static 'imgs/caixa_dir.png' %}"></a></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="contato">
+      <h3 class="txt-roxo">
+        FALE COM <span class="txt-amarelo"> A PATUSCADA </span>
+      </h3>
+      {% if messages %}
+      <br>
+      {% for m in messages%}
+          <div class="alert alert-{{m.tags}}" role="alert">{{m}}</div>
+      {% endfor%}
+      {% endif %}
+      <div class="row">
+        <form action="{% url 'home' %}" method="POST" class="row g-3"> {% csrf_token %}
+          <div class="col-md-6 form-floating">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Seu nome" >
+            <label for="floatingInput">Nome*</label>
+          </div> 
+          <div class="col-md-6 form-floating">
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+            <label for="floatingInput">Email*</label>        
+          </div>
+          <div class="col-md-6 form-floating">
+            <input type="tel" class="form-control" name="tel" id="tel" placeholder="(77) 99191-9191">
+            <label for="floatingInput">Telefone</label>
+          </div>
+          <div class="col-md-6 form-floating">
+            <input type="text" class="form-control" name="instagram" id="instagram" placeholder="Seu instagram" >
+            <label for="floatingInput">Instagram</label>
+          </div> 
+          <div class="col-12 form-floating">
+            <input type="text" class="form-control" name="mensagem" id="mensagem" placeholder="Sua mensagem">
+            <label for="inputAddress" class="form-label">Sua mensagem*</label>            
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-default"><img src=" {% static 'imgs/btn_enviar.png' %}" alt=""></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+          <img src="{% static 'imgs/bg_footer.png' %}" alt="">
+        </div>
+    </div>
+  </footer>
+
+</div>
+  
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
